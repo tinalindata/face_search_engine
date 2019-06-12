@@ -1,0 +1,10 @@
+<donkey>
+	<index><algorithm>kgraph</algorithm></index>
+	<root>db</root>
+	<max_dbs>5</max_dbs>
+	<last_size>50</last_size>
+	<http>
+		<server><port>8888</port><threads>1</threads><key></key></server>
+		<client><server>127.0.0.1:8888</server></client>
+	</http>
+</donkey>
