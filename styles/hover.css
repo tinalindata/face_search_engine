@@ -1,0 +1,67 @@
+body {
+    color: #555;
+    font-family: "Open Sans";
+    font-size: 16px;
+    position: relative;
+    font-weight: 400;
+}
+
+
+.title {
+    height: 20vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1px;
+    margin-bottom: 10px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    color: #ffe;
+}
+
+.upload {
+    background-color: rgb(247, 247, 247);
+    padding: 14px;
+    border-bottom: 1px solid;
+}
+
+.upload__file {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.origin__image {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result__table {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+
+
+imageBox {
+      position: relative;
+      float: left;
+}
+
+.imageBox .hoverImg {
+      position: relative;
+      z-index: 99;
+      display: none;
+      left:50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+}
+.imageBox:hover .hoverImg {
+      display: block;
+ }
