@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/hover.css') }}">
+	<title>Face Search Engine</title>
+</head>
+<body>
+	<div class="title">
+		<h1>Face Search Engine</h1>
+	</div>
+
+	<!-- Upload image from both url and local image file -->
+	<div class="upload">
+		<div class="upload__file">
+			<form action="" enctype="multipart/form-data" method="POST">
+				<input type="file" name="file" class="image__file"/>
+				<input type="submit" value="Analyze" class="upload__btn"/>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

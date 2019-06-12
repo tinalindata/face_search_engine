@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/hover.css') }}">
+	<title>Face Search Engine</title>
+</head>
+<body>
+	<div class="title">
+		<h1>Face Search Engine</h1>
+	</div>
+
+	<!-- Upload image from both url and local image file -->
+	<div class="upload">
+		<div class="upload__file">
+			<form action="" enctype="multipart/form-data" method="POST">
+				<input type="file" name="file" class="image__file"/>
+				<input type="submit" value="Analyze" class="upload__btn"/>
+			</form>
+		</div>
+	</div>
+
+	<!-- Display the uploaded image -->
+	<img src="{{ url_for('static', filename='./images/'+directUniqueName+'/'+fileUniqueName) }}" width="30%" height="30%" alt="Can't display this image!" class="origin__image"/>
+
+	<!-- Analyze the uploaded image -->
+	<table align="center" border="0" cellpadding="20" cellspacing="0" width="100%" class="result__table">
+		<tbody>
+			<tr>
+				<td>Detected face</td>
+				{% for col in column_names %}
+					<td>{{ col }}</td>
+				{% endfor %}
+			</tr>
+			{% for f in input_faces %}
+				<tr><td><img src="{{ url_for('static', filename='./images/'+directUniqueName+'/'+f) }}" width="100px" alt="Cannot show this face" /></td>
+					{% for out in output_faces[f] %}
+						{% set origin = origin_img[f][loop.index-1] %}
+						<td>
+							<div class="imageBox">
+							  <div class="imageInn">
+								<img src="{{ url_for('send_img', path=out) }}" width="100px" alt="Default Image">
+							  </div>
+							  <div class="hoverImg">
+								<img src="{{ origin }}", width="300px" alt="Profile Image">
+							  </div>
+							</div>
+						</td>
+					{% endfor %}
+				</tr>
+				<tr>
+					<td>Scores: </td>
+					{% for s in output_scores[f] %}
+						<td><p>{{ s }}</p></td>
+					{% endfor %}
+				</tr>
+        	{% endfor %}
+		</tbody>
+	</table>
+
+</body>
+</html>
