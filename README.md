@@ -2,6 +2,7 @@
 
 Authors: Tina Lin, Kevin Deng, Mark Wu 
 
+&nbsp;
 ## Demo 
 ![Face Search Engine Demo](FaceSearchEngine_Demo.gif)
 
