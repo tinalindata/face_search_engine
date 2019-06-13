@@ -83,5 +83,10 @@ To insert data, run `python3 insertDB.py` when the server is open. And `searchDB
  {'key': 'data/x8/53/acdhx853/0', 'meta': 'https://thumbnail/url/acdhx853.jpg', 'details': '', 'score': 0.7825058698654175}]
 ```
 
-        
+## Future Work
+For the future work, there are several directions we can pursue: 
+(1) The face detection. As discussed above, an improved algorithm is needed to detect only human faces and thus, to improve the performance of our Face Search Engine. 
+(2) A bigger database. A bigger database would enable higher generalizability so that it can match the input face with generally more similar faces. 
+(3) Another type of dataset. The potential application of our Face Search Engine is not limited to searching celebrity lookalike. It can also be applied to other kinds of face searching if we change the type of database. For example, with the criminal database, the police could identify possible criminals from the real-time CCTV photo. 
+(4) Improvement of the user interface. Due to the time limitation, we didn’t implement the complicated user interface and thus, a better user interface with proper guidelines and prompts should be integrated into our current design.
              
