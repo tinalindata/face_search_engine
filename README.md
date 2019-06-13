@@ -8,7 +8,7 @@ Tina Lin & Kevin Deng & Mark Wu &bull; 12/2018
 
 &nbsp;
 ## Motivation
-Oftentimes individuals are curious about their celebrity lookalike. Especially for young women who want to find their personal style, finding their celebrity lookalikes and following celebrity fashion icons’ dressing style will be a shortcut to dress fashionably. So this is what I found when I was searching for my celebrity lookalike: 
+Oftentimes individuals are curious about their celebrity lookalike. Especially for young women who want to find their personal style, finding their celebrity lookalikes and following celebrity fashion icons’ dressing style will be a shortcut to dress fashionably. So this is what Tina found when she was searching for her celebrity lookalike: 
 
 
 ![Motivation](Motivation.png)
