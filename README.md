@@ -3,10 +3,6 @@
 ###### Tina Lin & Kevin Deng & Mark Wu &bull; 12/2018
 
 &nbsp;
-## Demo 
-![Face Search Engine Demo](FaceSearchEngine_Demo.gif)
-
-&nbsp;
 ## Motivation
 Oftentimes individuals are curious about their celebrity lookalike. Especially for young women who want to find their personal style, finding their celebrity lookalikes and following celebrity fashion icons’ dressing style will be a shortcut to dress fashionably. 
 
@@ -24,7 +20,7 @@ This project aims to construct a face search engine using the techologies of fac
 ![Workflow](Workflow.png)
 
 &nbsp;
-## Instructions
+## User Guide 
 ### 0. Environment
 #### Operating System
 ```bash
@@ -111,4 +107,6 @@ In order to evaluate our method, and provide a baseline for search engine perfor
 
 4. Improvement of the user interface. Due to the time limitation, we didn’t implement the complicated user interface and thus, a better user interface with proper guidelines and prompts should be integrated into our current design.
 
-
+&nbsp;
+## Demo 
+![Face Search Engine Demo](FaceSearchEngine_Demo.gif)
