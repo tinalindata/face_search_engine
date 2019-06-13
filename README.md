@@ -85,7 +85,7 @@ To insert data, run `python3 insertDB.py` when the server is open. And `searchDB
 ```
 
 ## Future Work
-For the future work, there are several directions we can pursue: 
+
 (1) The face detection. As discussed above, an improved algorithm is needed to detect only human faces and thus, to improve the performance of our Face Search Engine. 
 
 (2) A bigger database. A bigger database would enable higher generalizability so that it can match the input face with generally more similar faces. 
