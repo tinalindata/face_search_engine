@@ -1,4 +1,4 @@
-# Face Search Engine
+# Face Search Engine - Who is Your Celebrity Lookalike?
 
 Tina Lin & Kevin Deng & Mark Wu &bull; 12/2018
 
