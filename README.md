@@ -5,17 +5,17 @@ Authors: Tina Lin, Kevin Deng, Mark Wu
 ## Demo 
 ![Face Search Engine Demo](FaceSearchEngine_Demo.gif)
 
-
+&nbsp;
 ## Motivation
 Oftentimes individuals are curious about their celebrity lookalike. Especially for young women who want to find their personal style, finding their celebrity lookalikes and following celebrity fashion icons’ dressing style will be a shortcut to dress fashionably.
 
 For this reason, the researchers sought to create a face search engine. When the user uploads a photo with multiple faces as the input, all the faces in that photo can be detected and for each of the detected faces, a number of K similar faces from the celebrity dataset as well as their similarity scores will be shown in the output.
 
-
+&nbsp;
 ## Data Source 
 A collection of over 1 million celebrity photos are provided by Ann Arbor Algorithms Inc. as the data source. In our GitHub demo, we used part of these photos and adding additional known faces for validation.
 
-
+&nbsp;
 ## Instructions
 This project aims to construct a face search engine using the techologies of face detection, face feature extraction and information retrieval. We use [SeetaFaceEngine](https://github.com/seetaface/SeetaFaceEngine) and its python API [pyseeta](https://github.com/TuXiaokang/pyseeta) to detect and label the faces from a given image, and use [FaceNet](https://github.com/davidsandberg/facenet) to extract the features of each face. The search engine is built upon the [donkey framework](https://github.com/aaalgo/donkey), which receive an uploaded image file and return K most similar faces and their origin images from our dataset. 
 
@@ -90,7 +90,7 @@ To insert data, run `python3 insertDB.py` when the server is open. And `searchDB
  {'key': 'data/x8/53/acdhx853/0', 'meta': 'https://thumbnail/url/acdhx853.jpg', 'details': '', 'score': 0.7825058698654175}]
 ```
 
-
+&nbsp;
 ## Future Work
 
 1. The face detection. As discussed above, an improved algorithm is needed to detect only human faces and thus, to improve the performance of our Face Search Engine. 
@@ -100,7 +100,8 @@ To insert data, run `python3 insertDB.py` when the server is open. And `searchDB
 3. Another type of dataset. The potential application of our Face Search Engine is not limited to searching celebrity lookalike. It can also be applied to other kinds of face searching if we change the type of database. For example, with the criminal database, the police could identify possible criminals from the real-time CCTV photo. 
 
 4. Improvement of the user interface. Due to the time limitation, we didn’t implement the complicated user interface and thus, a better user interface with proper guidelines and prompts should be integrated into our current design.
-             
+
+&nbsp;             
 ## Acknowledgements
 
 The authors thank Prof. Qiaozhu Mei and GSI Shiyan Yan for their insightful instructions on the project. The authors also thank Dr. Wei Dong from Ann Arbor Algorithm Inc. for providing the dataset with over one million celebrity photos and technique support.
