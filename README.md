@@ -13,19 +13,20 @@ For this reason, the researchers sought to create a face search engine. When the
 ## Data Source 
 A collection of over 1 million celebrity photos are provided by Ann Arbor Algorithms Inc. as the data source. In our GitHub demo, we used part of these photos and adding additional known faces for validation.
 
+## Summary 
 This project aims to construct a face search engine using the techologies of face detection, face feature extraction and information retrieval. We use [SeetaFaceEngine](https://github.com/seetaface/SeetaFaceEngine) and its python API [pyseeta](https://github.com/TuXiaokang/pyseeta) to detect and label the faces from a given image, and use [FaceNet](https://github.com/davidsandberg/facenet) to extract the features of each face. The search engine is built upon the [donkey framework](https://github.com/aaalgo/donkey), which receive an uploaded image file and return K most similar faces and their origin images from our dataset. 
 
-## 0. Environment
-### Operating system
+### 1. Environment
+#### Operating system
 ```bash
 Distributor ID:	Ubuntu
 Description:	Ubuntu 18.04.1 LTS
 Release:	18.04
 Codename:	bionic
 ```
-### pyseeta
+#### pyseeta
 Just follow the instruction of pyseeta installation: https://github.com/TuXiaokang/pyseeta
-### FaceNet pre-trained model
+#### FaceNet pre-trained model
 The pre-trained model can be downloaded from the following link. The file name need to change and make sure the following file are included in this directory:
 ```bash
 20180402-114759.pb
@@ -36,7 +37,7 @@ model-20180402-114759.data-00000-of-00001
 | Model name      | LFW accuracy | Training dataset | Architecture |
 |-----------------|--------------|------------------|--------------|
 | [20180402-114759](https://drive.google.com/open?id=1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-) | 0.9965        | VGGFace2      | [Inception ResNet v1](https://github.com/davidsandberg/facenet/blob/master/src/models/inception_resnet_v1.py) |
-## 1. Face collection
+### 2. Face collection
 In order to construct the search engine, the very first thing is to collect the faces, and manage their information in a well-defined file structure. In the final version of our project, we have 1000000 celebrity images in our database (data not shown here for privacy consideration), and the input of these data is a lists structured as `[barcode, thumbnail_url, origin_url]`. Suppose the barcode is acd8b762, the corresponding directory structure should be:
 ```bash
 |-- data
@@ -71,7 +72,7 @@ In order to construct the search engine, the very first thing is to collect the 
 ```
 `face_detect.py` is used to detect faces, and generate the clipped face files and info. `face_vectorize.py` is used to generate the features.npy.
 
-## 2. Construct search engine
+### 3. Construct search engine
 The donkey framework have already compiled in this repository. To construct a new database for the search engine, one needs to run `bash reset.sh` to reset the database, and open server `./server` before insert the data.  
 In `donkey.xml` we define the address and port of the server. When changing them in the XML file, the corresponding code in `fawn.py` should also change.  
 
