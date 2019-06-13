@@ -3,7 +3,7 @@
 Authors: Tina Lin, Kevin Deng, Mark Wu 
 
 ## Demo 
-![Face Search Engine Demo](demo/demo.gif)
+![Face Search Engine Demo](FaceSearchEngine_Demo.gif)
 
 ## Motivation
 Oftentimes individuals are curious about their celebrity lookalike. Especially for young women who want to find their personal style, finding their celebrity lookalikes and following celebrity fashion icons’ dressing style will be a shortcut to dress fashionably.
