@@ -92,6 +92,10 @@ To insert data, run `python3 insertDB.py` when the server is open. And `searchDB
 ```
 
 &nbsp;
+## Evaluation
+In order to evaluate our method, and provide a baseline for search engine performance, two additional photos of the people in the input photo were added to the database. If two additional photos get the highest ranks, then the search engine will be evaluated as successful. 
+
+&nbsp;
 ## Future Work
 
 1. The face detection. As discussed above, an improved algorithm is needed to detect only human faces and thus, to improve the performance of our Face Search Engine. 
