@@ -94,3 +94,6 @@ To insert data, run `python3 insertDB.py` when the server is open. And `searchDB
 
 4. Improvement of the user interface. Due to the time limitation, we didn’t implement the complicated user interface and thus, a better user interface with proper guidelines and prompts should be integrated into our current design.
              
+## Acknowledgements
+
+The authors thank Prof. Qiaozhu Mei and GSI Shiyan Yan for their insightful instructions on the project. The authors also thank Dr. Wei Dong from Ann Arbor Algorithm Inc. for providing the dataset with over one million celebrity photos and technique support.
