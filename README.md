@@ -1,7 +1,17 @@
-# face-search-engine
+# Face Search Engine
+
 Authors: Tina Lin, Kevin Deng, Mark Wu 
 
+## Motivation
+Oftentimes individuals are curious about their celebrity lookalike. Especially for young women who want to find their personal style, finding their celebrity lookalikes and following celebrity fashion icons’ dressing style will be a shortcut to dress fashionably.
+
+For this reason, the researchers sought to create a face search engine. When the user uploads a photo with multiple faces as the input, all the faces in that photo can be detected and for each of the detected faces, a number of K similar faces from the celebrity dataset as well as their similarity scores will be shown in the output.
+
+## Data Source 
+A collection of over 1 million celebrity photos are provided by Ann Arbor Algorithms Inc. as the data source. In our GitHub demo, we used part of these photos and adding additional known faces for validation.
+
 This project aims to construct a face search engine using the techologies of face detection, face feature extraction and information retrieval. We use [SeetaFaceEngine](https://github.com/seetaface/SeetaFaceEngine) and its python API [pyseeta](https://github.com/TuXiaokang/pyseeta) to detect and label the faces from a given image, and use [FaceNet](https://github.com/davidsandberg/facenet) to extract the features of each face. The search engine is built upon the [donkey framework](https://github.com/aaalgo/donkey), which receive an uploaded image file and return K most similar faces and their origin images from our dataset. 
+
 ## 0. Environment
 ### Operating system
 ```bash
