@@ -19,7 +19,7 @@ A collection of over 1 million celebrity photos are provided by Ann Arbor Algori
 &nbsp;
 ## Workflow
 
-This project aims to construct a face search engine using the techologies of face detection, face feature extraction and information retrieval. We use SeetaFaceEngine and its python API pyseeta to detect and label the faces from a given image, and use FaceNet to extract the features of each face. The search engine is built upon the donkey framework, which receive an uploaded image file and return K most similar faces and their origin images from our dataset.
+This project aims to construct a face search engine using the techologies of face detection, face feature extraction and information retrieval. We use [SeetaFaceEngine](https://github.com/seetaface/SeetaFaceEngine) and its python API [pyseeta](https://github.com/TuXiaokang/pyseeta) to detect and label the faces from a given image, and use [FaceNet](https://github.com/davidsandberg/facenet) to extract the features of each face. The search engine is built upon the [donkey framework](https://github.com/aaalgo/donkey), which receive an uploaded image file and return K most similar faces and their origin images from our dataset. 
 
 ![Workflow](Workflow.png)
 
