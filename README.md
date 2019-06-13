@@ -10,7 +10,7 @@ Tina Lin & Kevin Deng & Mark Wu &bull; 12/2018
 ## Motivation
 Oftentimes individuals are curious about their celebrity lookalike. Especially for young women who want to find their personal style, finding their celebrity lookalikes and following celebrity fashion icons’ dressing style will be a shortcut to dress fashionably.
 
-For this reason, the researchers sought to create a face search engine. When the user uploads a photo with multiple faces as the input, all the faces in that photo can be detected and for each of the detected faces, a number of K similar faces from the celebrity dataset as well as their similarity scores will be shown in the output.
+For this reason, we sought to create a face search engine. When the user uploads a photo with multiple faces as the input, all the faces in that photo can be detected and for each of the detected faces, a number of K similar faces from the celebrity dataset as well as their similarity scores will be shown in the output.
 
 &nbsp;
 ## Data Source 
