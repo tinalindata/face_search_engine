@@ -1,6 +1,6 @@
 # Face Search Engine
 
-Authors: Tina Lin, Kevin Deng, Mark Wu 
+Tina Lin & Kevin Deng & Mark Wu &bull; 12/2018
 
 &nbsp;
 ## Demo 
